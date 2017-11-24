@@ -7,7 +7,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-// A struct to hold the AS information all together.
+// A struct to hold the AS information altogether
 type BGPStat struct {
 	time             int
 	v4Count          uint32
@@ -29,7 +29,6 @@ func (b BGPStat) String() string {
 		b.peers6Configured, b.peers6Up)
 }
 
-// Strut function
 func (b BGPStat) AllUp() bool {
 	if b.peersConfigured != b.peersUp && b.peers6Configured != b.peers6Up {
 		return false
