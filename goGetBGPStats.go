@@ -8,7 +8,6 @@ import (
 )
 
 // A struct to hold the AS information all together.
-// Test update
 type BGPStat struct {
 	time             int
 	v4Count          uint32
