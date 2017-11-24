@@ -33,9 +33,8 @@ func (b BGPStat) String() string {
 func (b BGPStat) AllUp() bool {
 	if b.peersConfigured != b.peersUp && b.peers6Configured != b.peers6Up {
 		return false
-	} else {
-		return true
 	}
+	return true
 }
 
 func main() {
